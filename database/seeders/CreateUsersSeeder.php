@@ -26,11 +26,11 @@ class CreateUsersSeeder extends Seeder
                 'role' => 0,
             ],
             [
-                'name' => 'Pengurus',
+                'name' => 'Driver',
                 'id_driver' => '320606',
                 'district' => 'Krangkeng',
                 'no_hp' => '089526396629',
-                'email' => 'pengurus@pengurus.com',
+                'email' => 'driver@driver.com',
                 'password' => bcrypt('password'),
                 'role' => 1,
             ],

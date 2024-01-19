@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="{{ asset('db/assets/images/msjd.png') }}">
+<link rel="shortcut icon" href="{{ asset('db/assets/images/logscpt.png') }}">
 
 <link href="{{ asset('db/assets/plugins/morris/morris.css') }}" rel="stylesheet">
 <link href="{{ asset('db/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">

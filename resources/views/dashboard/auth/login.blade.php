@@ -32,7 +32,10 @@
 
         <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-5">LOGIN</h2>
+                <div class="d-flex justify-content-center align-items-center img-responsive">
+                    <img src="{{ asset('assets/img/logo sicepat.png') }}" height="190" alt="logo">
+                </div>
+                <h6 class="mt-5 text-uppercase text-center mb-3">LOGIN</h6>
                 @if (session()->has('success'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         {{ session('success') }}

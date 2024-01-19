@@ -13,7 +13,7 @@
                 <li>
                     <a href="{{ route('dashboard.kelola-pengurus.index') }}" class="waves-effect"><i
                             class="mdi mdi-account-multiple"></i><span>
-                            Kelola Pengurus </span></a>
+                            Kelola Driver </span></a>
                 </li>
             @endif
             <li>

@@ -12,8 +12,6 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
-                    <a class="dropdown-item" href="/"><i class="mdi mdi-home m-r-5 text-muted"></i>
-                        Home</a>
                     <a class="dropdown-item" href="{{ route('logout') }}"><i
                             class="mdi mdi-logout m-r-5 text-muted"></i>
                         Logout</a>

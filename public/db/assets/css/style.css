@@ -2487,7 +2487,8 @@ label {
   display: inline-block;
   font-weight: 400;
   border: 2px solid #f8f8fe;
-  text-align: center;
+  /* text-align: center; */
+  float: left;
   border-radius: 50%;
   background: #e1e4fb;
 }
