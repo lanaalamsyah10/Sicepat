@@ -11,9 +11,9 @@
             </li>
             @if (Auth::user()->role == 'admin')
                 <li>
-                    <a href="{{ route('dashboard.kelola-pengurus.index') }}" class="waves-effect"><i
+                    <a href="{{ route('dashboard.driver.index') }}" class="waves-effect"><i
                             class="mdi mdi-account-multiple"></i><span>
-                            Kelola Driver </span></a>
+                            Driver </span></a>
                 </li>
             @endif
             <li>

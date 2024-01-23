@@ -30,8 +30,8 @@ Route::middleware(['auth'])->group(function () {
         });
         //Pengurus
         Route::middleware(['auth', 'user-access:admin'])->group(function () {
-            Route::resource('/kelola-pengurus', AdminController::class);
-            Route::resource('/biodata-pengurus', DashboardPengurusController::class);
+            Route::resource('/driver', AdminController::class);
+            // Route::resource('/biodata-pengurus', DashboardPengurusController::class);
         });
         //Onhold
         Route::resource('/onhold', DashboardOnholdController::class);

@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Pengurus;
 use Illuminate\Http\Request;
-use App\Models\KategoriPengurus;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 
@@ -19,7 +17,7 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::orderByDesc('created_at')->get();
-        return view('dashboard.pengurus.kelola_pengurus.index', [
+        return view('dashboard.driver.index', [
             'users' => $users,
         ]);
     }
@@ -32,7 +30,7 @@ class AdminController extends Controller
     public function create()
     {
         $users = User::get();
-        return view('dashboard.pengurus.kelola_pengurus.tambah', [
+        return view('dashboard.driver.tambah', [
             'users' => $users,
         ]);
     }
@@ -68,7 +66,7 @@ class AdminController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        return redirect()->route('dashboard.kelola-pengurus.index')->with('success', 'Data Berhasil Disimpan!');
+        return redirect()->route('dashboard.driver.index')->with('success', 'Data Berhasil Disimpan!');
     }
 
     /**
@@ -91,7 +89,7 @@ class AdminController extends Controller
     public function edit($id)
     {
         $users = User::findOrFail($id);
-        return view('dashboard.pengurus.kelola_pengurus.edit', compact('users'));
+        return view('dashboard.driver.edit', compact('users'));
     }
 
     /**
@@ -138,7 +136,7 @@ class AdminController extends Controller
         $users = User::findOrFail($id);
         $users->update($userData);
 
-        return redirect()->route('dashboard.kelola-pengurus.index')->with('edit', 'Data Berhasil Diupdate!');
+        return redirect()->route('dashboard.driver.index')->with('edit', 'Data Berhasil Diupdate!');
     }
 
 
